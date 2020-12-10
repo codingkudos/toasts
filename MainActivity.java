@@ -11,15 +11,14 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonToast;
-    Context context = MainActivity.this;
-    String message = "You clicked the button";
-    int duration = Toast.LENGTH_LONG;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        Context context = MainActivity.this;
+        String message = "You clicked the button";
+        int duration = Toast.LENGTH_LONG;
 
         buttonToast = findViewById(R.id.buttonToast);
         buttonToast.setOnClickListener(new View.OnClickListener() {
