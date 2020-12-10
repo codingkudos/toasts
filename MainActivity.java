@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         String message = "You clicked the button";
         int duration = Toast.LENGTH_LONG;
 
-        buttonToast = findViewById(R.id.buttonToast);
+        Button buttonToast = findViewById(R.id.buttonToast);
         buttonToast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
